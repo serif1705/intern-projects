@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body onload="tarih()">
+        <p id="tarih">
+
+        <script>
+            function tarih() {
+                var an=new Date();
+                var yil=an.getFullYear();
+                var ay=an.getMonth()+1;
+                var gun=an.getDay();
+                var Tarih="Tarih: "+gun+"/"+ay+"/"+yil;
+                document.getElementById("tarih").innerHTML=Tarih;
+            }
+        </script>
+        </p>
+    </body>
+</html>

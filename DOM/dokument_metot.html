@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+    <body>
+        <h1 id="manset">Ilk Manset</h1>
+        <p id="ilk"></p>
+        <p id="Ýkinci"></p>
+        <img src="bayrak.jpg" id="bayrak" width="300px" onmouseover="karabayrak()"
+        onmouseout="albayrak() ">  
+        <script>
+            //Ýçerik deðiþtirme
+            document.getElementById("manset").innerHTML="Son Manset!!!";
+            document.getElementById("ilk").innerHTML="<b>Ýlk Paragraf...</b>";
+            document.getElementById("Ýkinci").innerText="<i>Ýkinci Paragraf...</i>";
+            
+            //Gorsellestirme
+            document.getElementById("manset").style.color="red";
+            document.getElementById("manset").style.fontSize="50px";
+            document.getElementById("manset").style.fontFamily="Arial";
+
+            //Özellik deðiþtirme
+            var bayragimiz=document.getElementById("bayrak");
+
+            function albayrak(){
+                bayragimiz.src="bayrak.jpg";
+            }
+
+            function karabayrak(){
+                bayragimiz.src="bayrak2.jpg ";
+            }
+
+        </script>
+    </body>
+</html>

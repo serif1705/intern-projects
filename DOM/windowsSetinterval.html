@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script>
+            var i=0;
+            function sayac(){
+                document.getElementById("kutu").innerHTML="<b>" + i + "<b>";  
+                i++;
+            }
+
+            window.setInterval(sayac,1000);
+        </script>
+        <div id="kutu"></div>
+    </body>
+</html>
